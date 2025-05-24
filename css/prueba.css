@@ -1,0 +1,82 @@
+/* Contenedor principal */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Botón circular */
+  .expand-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #4caf50;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1;
+    position: absolute;
+  }
+  
+  .expand-button.expanded {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  /* Icono de + */
+  .plus-icon {
+    font-size: 32px;
+  }
+  
+  .expand-button.expanded .plus-icon {
+    display: none;
+  }
+  
+  /* Información oculta */
+  .information {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #d1f1d1;
+    width: 90%;
+    height: 400px;
+    border-radius: 15px;
+    padding: 20px;
+    display: none;
+    z-index: 1;
+    overflow-y: auto;
+  }
+  
+  .expand-button.expanded + .information {
+    display: block;
+  }
+  
+  /* Estilo de los bloques de texto */
+  .info-block {
+    margin-bottom: 20px;
+  }
+  
+  .info-block p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  

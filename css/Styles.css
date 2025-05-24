@@ -1,0 +1,1098 @@
+body{
+    background-position: top left, top right;
+    background-size: 35em;
+    background-repeat: no-repeat;
+    background-color: #C2D6C5;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+/*SECCION ESTULADA DE index.html*/
+.titulo{
+    grid-column: 2 / 5;
+    grid-row: 1;
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: #9F684B;
+}
+.titulo img{
+    width: 12em;
+    height: 12em;
+    padding: 1em;
+}
+h1{
+    grid-column: 3;
+    grid-row: 1;
+    font-family: "Inter", sans-serif;
+    font-size: 5em;
+    color: #9F684B;
+    text-align: center;
+}
+.parrafoIntro{
+    overflow: hidden;
+    grid-row: 2;
+    grid-column: 2 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    margin-top: -2em;
+    height: 40%;
+    border-radius: 30px;
+    box-shadow: #606d6b 0px 0px 30px;
+    background-color: #EEDBBE;
+    color: #3E4544;
+    font-family: "Inter"- sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+.cards{
+    transition: opacity 3s ease-in-out,
+                scale 3s ease-in-out;
+    grid-column: 1 / 6;
+    grid-row: 3 / 4;
+    margin-top: -10em;
+    margin-bottom: -40em;
+    justify-self: center;
+    width: 70em;
+    padding: 4em;
+    color: white;
+    animation: scroll linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 600px;
+}
+@keyframes scroll {
+    from{
+        scale: 0%;
+        opacity: 0;
+    }
+    to{
+        scale: 100%;
+        opacity: 1;
+    }
+}
+.card1{
+    margin-bottom: 5em;
+    display: flex;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 40px;
+    background-color: #9F684B;
+    font-family: "Keania One", sans-serif;
+}
+.tituloCardI{
+    position: absolute;
+    margin-left: 8em;
+    width: 12em;
+    font-size: 3em;
+}
+.textoCardI{
+    align-self: center;
+    padding-top: 2em;
+    padding-right: 1.5em;
+    font-size: 1.5em;
+}
+.card2{
+    margin-bottom: 5em;
+    display: flex;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 150px;
+    background-color: #9F684B;
+    font-family: "Keania One", sans-serif;
+}
+.tituloCardII{
+    position: absolute;
+    margin-left: 8em;
+    width: 12em;
+    font-size: 3em;
+}
+.textoCardII{
+    align-self: center;
+    padding-top: 2em;
+    padding-left: 2em;
+    font-size: 1.5em;
+}
+.card3{
+    display: flex;
+    margin-bottom: 50em;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 40px;
+    background-color: #9F684B;
+    font-family: "Keania One", sans-serif;
+}
+.tituloCardIII{
+    position: absolute;
+    margin-left: 8em;
+    width: 12em;
+    font-size: 3em;
+}
+.textoCardIII{
+    align-self: center;
+    padding-top: 2em;
+    padding-right: 1.5em;
+    font-size: 1.5em;
+}
+.cards img{
+    padding: 1.5em;
+    width: 15em;
+}
+footer{
+    bottom: 14em;
+    position: relative;
+    grid-row: 5;
+    grid-column: 1 / 6;
+}
+.botones{
+    height: 20em;
+    padding-top: 20em;
+    display: flex;
+    grid-row: 5;
+}
+.registrarse{
+    display: flex;
+    width: 100%;
+    background-color: #EEDBBE;
+    text-align: center;
+    border-right: #5E8D66 10px solid;
+    font-family: "Inter"- sans-serif;
+    font-size: 2em;
+    color: #9F684B;
+}
+.botonRegistrarseLink{
+    position: absolute;
+    align-self: center;
+}
+.botonRegistrarse{
+    height: 2em;
+    width: 5em;
+    margin-left: 1.5em;
+    border-radius: 15px;
+    background-color: #5E8D66;
+    font-size: 1em;
+    color: white;
+}
+.textoRegistro{
+    text-align: center;
+    align-self: center;
+    padding-left: 8em;
+    padding-right: 2em;
+}
+.iniciarSesion{
+    width: 60%;
+    justify-items:center;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border-left: #EEDBBE 10px solid;
+    background-color: #5E8D66;
+    font-family: "Inter"- sans-serif;
+    font-size: 2em;
+    color: #EEDBBE;
+}
+.botonInicioSesion{
+    height: 2em;
+    width: 5em;
+    border-radius: 15px;
+    background-color: #3E4544;
+    font-size: 1em;
+    color: white;
+}
+.textoInicioSesion{
+    text-align: center;
+    align-self: center;
+}
+/*SECCION ESTULADA DE ia.html*/
+.tituloSmartChef{
+    grid-column: 2 / 5;
+    grid-row: 2;
+    margin-top: -0.5em;
+}
+.home button{
+    margin-left: -4em;
+    background-color: transparent;
+    border: none;
+}
+#flechaDropdown{
+    width: 10em;
+    height: 5em;
+}
+.dropdown-contentSmartChef {
+    position: absolute;
+    margin-top: 8em;
+    margin-left: 5em;
+    height: 9.5em;
+    width: 8em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    align-items: center;
+    border-radius: 20px;
+    display: none; 
+    background-color: white;
+    box-shadow: #3E4544 0px 10px 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+.dropdown-contentSmartChef a {
+    color: black;
+    padding: 12px 16px;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-contentSmartChef a:hover {
+    background-color: #f1f1f1;
+}
+.cocina{
+    margin-bottom: 15em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 100px;
+    background-color: rgba(94, 141, 102, 0.5);
+    backdrop-filter: blur(5px);
+    grid-column: 1 / 6;
+    grid-row: 3 / 6;
+    height: 42em;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.fotoChef{
+    grid-row: 2 / 5;
+    grid-column: 1 / 3;
+    padding: 3em;
+    border-radius: 150px;
+    align-self: center;
+    width: 80%;
+    height: 145%;
+}
+.cortina{
+    grid-row: 2 / 5;
+    grid-column: 1 / 3;
+    align-self: center;
+    border-radius: 100px;
+    margin-left: 3em;
+    height: 145%;
+    width: 80%;
+    background-color: transparent;
+}
+.desvanecer{
+    animation: cambiar 1s alternate-reverse;
+}
+@keyframes cambiar {
+    to{
+        backdrop-filter: blur(0px);
+        z-index: 1;
+        opacity: 0;
+    }
+    from{
+        backdrop-filter: blur(10px);
+        z-index: 1;
+        opacity: 1;
+    }
+
+}
+.explicacionChef{
+    grid-row: 1;
+    grid-column: 3 / 6;
+    padding-top: 0em;
+    padding-right: 2em;
+    margin: auto;
+    justify-self: center;
+    color: #3E4544;
+    font-family: "Keania One", sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+.consultaChef{
+    grid-row: 2 / 3;
+    grid-column: 3 / 6;
+    margin-top: 4em;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+.inputChef{
+    border-radius: 50px;
+    border: #9F684B 5px solid;
+    padding: 0.2em;
+    padding-left: 0.5em;
+    background-color: #EEDBBE;
+    font-family: "Inter"- sans-serif;
+    font-size: 2.2em;
+    color: #9F684B;
+}
+.botonChef{
+    cursor: pointer;
+    border: #EEDBBE 5px solid;
+    border-radius: 50px;
+    padding: 0.5em;
+    background-color: #9F684B;
+    color: #EEDBBE;
+    font-family: "Keania One", sans-serif;
+    font-size: 2em;
+    align-content: center;
+    justify-items: center;
+}
+.botonChef img{
+    padding: 0;
+    width: 1.5em;
+    height: 1em;
+}
+@keyframes parpadeo {
+    from{background-color: #EEDBBE; color: #9F684B; border-color: #9F684B;}
+    to{background-color: #9F684B; color: #EEDBBE;border-color: #EEDBBE;}
+}
+.botonChef:hover{
+    animation: parpadeo 1s infinite ease-in;
+}
+.respuestaChef{
+    border-radius: 20px;
+    margin: 1em;
+    padding: 1em;
+    font-size: 2em;
+    grid-row: 3 / 5;
+    grid-column: 3 / 6;
+    margin-right: 3em;
+    height: 100%;
+    overflow: auto;
+    background-color: #9F684B;
+}
+.respuestaChef::-webkit-scrollbar{
+    background-color: transparent;
+}
+.respuestaChef::-webkit-scrollbar-track {
+    margin: 50px;
+    background-color: rgba(238, 219, 190, 0.5);
+    border-radius: 20px; /* Esquinas redondeadas */
+}
+.respuestaChef::-webkit-scrollbar-thumb{
+    background-color: #EEDBBE;
+    border-radius: 20px;
+}
+.responseText{
+    color: #EEDBBE;
+    font-family: "Inter"- sans-serif;
+    font-size: 1em;
+}
+/*SECCION ESTULADA DE login.html*/
+.login{
+    background-color: rgba(94, 141, 102, 0.9);
+    background-repeat: no-repeat;
+    background-position: right 40px ;
+    border-radius: 20px;
+    grid-column: 2 / 5;
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    padding: 10em;
+    margin-top: 2em;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.loginRegister{
+    background-color: rgba(92, 141, 102, 0.9);
+    background-repeat: no-repeat;
+    background-position: right 40px ;
+    border-radius: 20px;
+    grid-column: 2 / 5;
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    padding: 10em;
+    margin-top: 2em;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 150%;
+}
+.loginEdit{
+    background-color: rgba(94, 141, 102, 0.9);
+    background-repeat: no-repeat;
+    background-position: right 40px ;
+    border-radius: 20px;
+    grid-column: 2 / 5;
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    padding: 10em;
+    margin-top: -5em;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 160%;
+}
+.datosLogin{
+    display: flex;
+    flex-direction: column;
+}
+.emailPassword{
+    margin-left: 0.5em;
+    color: #C2D6C5;
+    font-size: 2em;
+    font-family: "Keania One", sans-serif;
+}
+.emailPasswordSelect{
+    color: #C2D6C5;
+    background-color: rgba(62, 69, 68, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 2em;
+    font-family: "Keania One", sans-serif;
+    margin: 1em;
+}
+.datosLogin input{
+    justify-self: center;
+    width: 89%;
+    background-color: rgba(62, 69, 68, 0.5);
+    border-radius: 20px;
+    padding: 1em;
+    margin-bottom: 1em;
+    color: #C2D6C5;
+    font-size: 2em;
+}
+.datosLogin button:not(.botonEditarUsuario){
+    justify-self: center;
+    width: auto;
+    background-color: #C2D6C5;
+    border-radius: 20px;
+    padding: 0.5em;
+    margin-left: -0.2em;
+    margin-bottom: 1em;
+    width: 100%;
+    color: #3E4544;
+    font-size: 3em;
+}
+.botonLogin{
+    justify-self: center;
+    border-radius: 20px;
+    padding: 0.5em;
+}
+.problemasLogin{
+    display: flex;
+    align-items: center;
+}
+.problemasLogin p{
+    color: #C2D6C5;
+    font-size: 1.7em;
+    padding: 0.5em;
+}
+.problemasLogin a{
+    text-decoration: none;
+}
+.problemasLogin button{
+    background-color: rgba(62, 69, 68, 0.5);
+    border-radius: 20px;
+    padding: 1em;
+    color: #C2D6C5;
+    font-size: 1.5em;
+}
+/*SECCION ESTULADA DE home.html*/
+.headerHome{
+    position: fixed;
+    width: 95%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 1em;
+    border-radius: 20em;
+    /*grid-column: 1 / 6;*/
+    background-color: rgba(62, 69, 68, 0.5);
+    /*flex-direction: row;*/
+    padding: 1em;
+    justify-content: space-between;
+    height: 3em;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+.headerHome img{
+    width: 2em;
+    height: 2em;
+    padding-right: 1em;
+    margin-left: -0.2em;
+}
+.home{
+    align-items: center;
+    display: flex;
+    font-size: 2em;
+}
+.dropDownPerfil img{
+    padding: 1em;
+    margin-right: -2.2em;
+    height: 2em;
+    width: 2em;
+    z-index: 1;
+}
+.home button{
+    margin-left: -4em;
+    background-color: transparent;
+    border: none;
+}
+#flechaDropdown{
+    width: 10em;
+    height: 5em;
+}
+.dropDownPerfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 1em;
+    font-size: 2em;
+    z-index: 1;
+}
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 2%;
+    height: auto;
+    width: 5em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    align-items: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: none; 
+    background-color: white;
+    z-index: 1;
+    overflow: hidden;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.show {
+    display: flex;
+    flex-direction: column;
+}
+.itemsHome{
+    grid-column: 2 / 5;
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*
+.container {
+    max-width: 800px;  
+    margin: 50px auto;  
+    padding: 20px; 
+    background-color: #2E7D32;  
+    border-radius: 10px;  
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);  
+}*/
+
+.table {
+    margin-top: 8em;
+    margin-left: 12em;
+    width: auto; /* Asegura que la tabla ocupe todo el ancho del contenedor */
+    font-family:"Keania One", sans-serif;
+    font-size: 1.2em;
+    border-collapse: collapse; /* Para eliminar el espacio entre celdas */
+    color: #d6c2a4; /* Color del texto de la tabla */
+}
+
+.table th, 
+.table td {
+    padding: 12px; /* Espacio interior para las celdas */
+    text-align: center; /* Alineación del texto */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea divisoria */
+}
+
+.table th {
+    background-color: #3E4544; /* Color de fondo para los encabezados */
+}
+.table td {
+    background-color: #606d6b; /* Color de fondo para los encabezados */
+}
+
+.btn {
+    display: inline-block; /* Permite aplicar padding y margin */
+    padding: 10px 15px; /* Espacio interior del botón */
+    margin: 5px; /* Espacio entre botones */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado en enlaces */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.btn-danger {
+    background-color: #C62828; /* Color rojo para el botón de eliminar */
+    color: white; /* Color del texto */
+}
+
+.btn-success {
+    background-color: #66BB6A; /* Color verde claro para el botón de editar */
+    color: white; /* Color del texto */
+}
+
+.btn-danger:hover {
+    background-color: #B71C1C; /* Color más oscuro al pasar el ratón */
+}
+
+.btn-success:hover {
+    background-color: #388E3C; /* Color más oscuro al pasar el ratón */
+}
+.smartChefAccessHome, .exercisessAccesHome, .calculatorAccessHome{
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: 15em;
+    width: 100%;
+    margin-top: -1em;
+    height: 41em;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EEDBBE;
+    text-align: center;
+    box-shadow: #9F684B 0px 0px 10px;
+}
+.smartChefAccessHome:hover{
+    box-shadow: #9F684B -10px 10px 10px;
+}
+.exercisessAccesHome:hover{
+    box-shadow: #9F684B 0px 10px 10px;
+}
+.calculatorAccessHome:hover{
+    box-shadow: #9F684B 10px 10px 10px;
+}
+.smartChefAccessHome p, .exercisessAccesHome p, .calculatorAccessHome p{
+    font-size: 1.5em;
+    padding: 0.2em;
+    height: 10em;
+}
+.smartChefAccessHome img, .exercisessAccesHome img, .calculatorAccessHome img{
+    width: 15em;
+    margin-top: 1em;
+}
+.smartChefAccessHome a, .exercisessAccesHome a, .calculatorAccessHome a{
+    margin-top: auto;
+}
+.smartChefAccessHome button, .exercisessAccesHome button, .calculatorAccessHome button{
+    padding: 1em;
+    width: 8em;
+    border-radius: 20px;
+    margin-top: auto;
+    margin-bottom: 0.5em;
+    background-color: #d6c2a4;
+    color: #3E4544;
+    box-shadow: #3E4544 0px 10px 1px;
+    font-size: 1.5em;
+}
+.smartChefAccessHome button:active, .exercisessAccesHome button:active, .calculatorAccessHome button:active{
+    box-shadow: none;
+}
+/*SECCION ESTILADA DE SmartMacros*/
+.tituloSmartMacros{
+    grid-row: 2;
+    grid-column: 2 / 5;
+    margin-top: -0.4em;
+}
+.datosSmartMacros{
+    grid-row: 2 / 4;
+    grid-column: 1 / 4;
+    position: relative;
+    width: 80%;
+    height: 40em;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    justify-items: center;
+    align-content: center;
+}
+.ingresarDatosSmartMacros{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+    width: 40em;
+    height: 100%;
+    background-color: #d6c2a4;
+    animation: bordeIngresarDatosSmartMacros 3s ease-in-out infinite alternate-reverse;
+    border-radius: 50px;
+    z-index: 2;
+}
+@keyframes bordeIngresarDatosSmartMacros {
+    from{
+        border: #a4d6a9 1em solid;
+        box-shadow: #3E4544 0px 0px 50px;
+    }
+    to{
+        border: #a4d6a9 1em solid;
+        box-shadow: none;
+    }
+}
+.tituloIngresarDatosCalculadora{
+    grid-row: 1;
+    grid-column: 1 / 6;
+    text-align: center;
+    font-family: "Keania One", sans-serif;
+    color: #3E4544;
+    font-size: 3.5em;
+}
+.datosAltura{
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: 2em;
+    margin-left: -3em;
+    position: relative;
+}
+.datosAltura label,.datosPeso label{
+    position: absolute;
+    left: 1.2em;
+    text-align: center;
+    font-size: 2em;
+    width: 3em;
+    top: 70%;
+    transform: translateY(-20%);
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+.datosAltura input{
+    position: absolute;
+    margin-top: 0.3em;
+    font-size: 5em;
+    overflow: hidden;
+    width: 2.5em;
+    text-align: center;
+    background-color: #a4d6a9;
+    border: rgba(62, 69, 68, 0.5) 0.1em solid;
+    border-radius: 10px;
+    scrollbar-width: none;
+}
+.datosAltura input:focus + label,
+input:not(:placeholder-shown) + label,
+.datosPeso input:focus + label,
+input:not(:placeholder-shown) + label{
+    top: -2%;
+    left: 0.5em;
+    width: 4em;
+    background-color: #a4d6a9;
+    border: rgba(62, 69, 68, 0.5) 0.2em solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+}
+.datosAltura button{
+    background-color: #a4d6a9;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1px;
+    padding: 0;
+    width: 50px;
+    align-items: center;
+    top: 0.65em;
+    left: 12.7em;
+    position: relative;
+    cursor: pointer;
+}
+.increment{
+    margin-top: 1.8em;
+    rotate: 180deg;
+    border: none;
+    border-left: rgba(62, 69, 68, 0.5) 0.57em solid;
+}
+.decrement{
+    border: none;
+    border-right: rgba(62, 69, 68, 0.5) 0.57em solid;
+}
+.increment1{
+    margin-top: 1.8em;
+    rotate: 180deg;
+    border: none;
+    border-left: rgba(62, 69, 68, 0.5) 0.57em solid;
+}
+.decrement1{
+    border: none;
+    border-right: rgba(62, 69, 68, 0.5) 0.57em solid;
+}
+.datosAltura img, .datosPeso img, .datosEdad img{
+    padding: 0;
+    margin: 0;
+    width: 3.7em;
+    height: 3.5em;
+}
+.datosPeso{
+    grid-row: 2;
+    grid-column: 4;
+    margin-left: -2.7em;
+    margin-top: 2em;
+    position: relative;
+}
+.datosPeso input{
+    position: absolute;
+    margin-top: 0.3em;
+    font-size: 5em;
+    overflow: hidden;
+    width: 2.5em;
+    text-align: center;
+    background-color: #a4d6a9;
+    border: rgba(62, 69, 68, 0.5) 0.1em solid;
+    border-radius: 10px;
+    scrollbar-width: none;
+}
+.datosPeso button{
+    background-color: #a4d6a9;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1px;
+    padding: 0;
+    width: 50px;
+    align-items: center;
+    top: 0.65em;
+    left: 12.7em;
+    position: relative;
+    cursor: pointer;
+}
+.datosActividad{
+    grid-row: 3 / 4;
+    grid-column: 1 / 6;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4em;
+    align-items: center;
+    justify-content: space-around;
+}
+.datosActividad select{
+    height: 2em;
+    font-size: 1.5em;
+    background-color: #a4d6a9;
+    border: rgba(62, 69, 68, 0.5) solid 0.3em;
+    border-radius: 10px;
+}
+.datosActividad p{
+    font-size: 1.5em;
+    margin-left: -4em;
+}
+.datosSexo{
+    grid-row: 4 / 5;
+    grid-column: 1 / 6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -2em;
+}
+.datosSexo select{
+    height: 2em;
+    font-size: 1.5em;
+    background-color: #a4d6a9;
+    border: rgba(62, 69, 68, 0.5) solid 0.3em;
+    border-radius: 10px;
+}
+.datosSexo p{
+    font-size: 1.5em;
+    margin-right: 4em;
+}
+.datosEdad{
+    grid-row: 5;
+    grid-column: 1;
+    margin-left: 13em;
+    margin-top: -2em;
+    position: relative;
+}
+.datosEdad label {
+    position: absolute;
+    left: 1.5em;
+    text-align: center;
+    font-size: 2em;
+    width: 3em;
+    top: 42%;
+    transform: translateY(-20%);
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+.datosEdad input {
+    position: absolute;
+    margin-top: 0.3em;
+    font-size: 5em;
+    overflow: hidden;
+    width: 2.5em;
+    text-align: center;
+    background-color: #a4d6a9;
+    border: rgba(62, 69, 68, 0.5) 0.1em solid;
+    border-radius: 10px;
+    scrollbar-width: none;
+}
+.datosEdad input:focus + label,
+.datosEdad input:not(:placeholder-shown) + label {
+    top: -1.2%;
+    left: 0.5em;
+    width: 2.5em;
+    background-color: #a4d6a9;
+    border: rgba(62, 69, 68, 0.5) 0.2em solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+}
+.datosEdad button{
+    background-color: #a4d6a9;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1px;
+    padding: 0;
+    width: 50px;
+    align-items: center;
+    top: 0.65em;
+    left: 12.7em;
+    position: relative;
+    cursor: pointer;
+}
+.increment2{
+    margin-top: 1.8em;
+    rotate: 180deg;
+    border: none;
+    border-left: rgba(62, 69, 68, 0.5) 0.57em solid;
+}
+.decrement2{
+    border: none;
+    border-right: rgba(62, 69, 68, 0.5) 0.57em solid;
+}
+/*.datosEdad img{
+
+}*/
+.botonMasInfo{
+    position: relative;
+    grid-column: 3 / 6;
+    grid-row: 2;
+    margin-left: 9.5em;
+    margin-top: 12em;
+    padding: 0;
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+    border: none;
+    background-color: #a4d6a9;
+    animation: movimientoBoton 1s infinite ease-in-out alternate-reverse;
+}
+.botonMasInfo img{
+    width: 50%;
+    height: 50%;
+}
+@keyframes movimientoBoton {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+.explicacionMacros{
+    grid-row: 2;
+    grid-column: 3 / 6;
+    margin-left: 8em;
+    margin-right: 5em;
+    margin-top: 10em;
+    padding: 1em;
+    width: 3em;
+    height: 3em;
+    display: none;
+    border-radius: 100%;
+    background-color: #a4d6a9; 
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+.explicacionMacros p{
+    font-size: 3em;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0.5em;
+}
+.contenedorInfoMacros{
+    display: flex;
+    overflow: hidden;
+}
+.informacion p{
+    color: #606d6b;
+}
+.informacion{
+    font-size: 0.5em;
+    width: 40%; 
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #C2D6C5; 
+    border-radius: 20px;
+    transition: width 0.3s ease; 
+    text-align: start;
+}
+.informacion:hover {
+    width: calc(200em); 
+    overflow: auto;
+    font-size: 0.7em;
+    z-index: 1;
+    padding: 1em;
+    filter: none;
+}
+.informacion::-webkit-scrollbar{
+    background-color: transparent;
+}.informacion::-webkit-scrollbar-track{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.informacion::-webkit-scrollbar-thumb{
+    background-color: #606d6b;
+    border-radius: 200px;
+}
+.calculoMacros{
+    grid-column: 3 / 6;
+    grid-row: 3 / 5;
+    margin: 3em;
+    background-color: #3E4544;
+    border-radius: 50px;
+}
+.contenedorCalculoMacros{
+    display: flex;
+    flex-direction: row;
+}
+.botonCalcular{
+    grid-column: 4 / 6;
+    grid-row: 3 / 5;
+    width: 5em;
+    height: 3em;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
+}
+.ComingSoon{
+    font-family: "Keania One", sans-serif;
+    color: #606d6b;
+    overflow: none;
+    font-size: 8em;
+    margin-left: 3em;
+    margin-top: 2.5em;
+    width: 8em;
+}
+.botonEditarUsuario{
+    width: auto;
+    background-color: #C2D6C5;
+    border-radius: 20px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: 100%;
+    color: #3E4544;
+    font-size: 3em;
+}

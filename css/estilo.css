@@ -1,0 +1,22 @@
+h1{
+    grid-column: 3;
+    grid-row: 1;
+    font-family: "Inter", sans-serif;
+    font-size: 5em;
+    color: #9F684B;
+    text-align: center;
+}
+.explicacion{
+    font-size: 20px;
+    grid-column: 3;
+    grid-row: 1;
+    font-family: "Inter", sans-serif;
+    color: #9F684B;
+    text-align: center;
+}
+.inputandbuttom{
+    text-align: center;
+}
+.fotochef{
+    justify-self: center;
+}
