@@ -21,7 +21,7 @@
 
 
             // Verificar si la ruta actual es 'login' o 'home'
-            if ($currentRoute !== 'login' && $currentRoute !== 'inicio' && $currentRoute !== 'login.php' && $currentRoute !== 'inicio.php') { ?>
+            if ($currentRoute !== 'login' && $currentRoute !== 'inicio' && $currentRoute != 'registro' && $currentRoute !== 'login.php' && $currentRoute !== 'inicio.php' && $currentRoute != 'registro.php') { ?>
         <header class="headerHome">
     <?php 
                 include('navar.php'); 
